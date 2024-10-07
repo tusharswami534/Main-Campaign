@@ -41,6 +41,10 @@
           fontSize: {
             '80px': '80px',
             '65px': '65px',
+          },
+          boxShadow: {
+            'images-shadow': ' 5px 10px 50px 0px #0000001A',
+            'main-campaign': '  0px 4px 30px 0px #00000026',
           }
         }
       }
@@ -55,22 +59,22 @@
     <div class="container px-3 mx-auto">
       <nav class="flex justify-center transition-300ms  mx-auto fixed z-40 top-0 w-full left-0 px-4 py-2 items-center ">
         <div class="max-w-[1440px] mx-auto flex w-full justify-between ">
-        <a href="#hero">
-          <img src="./assets/images/svg/logo.svg" alt="logo">
-        </a>
-        <div onclick="navmenu()" class="sm:hidden overflow-hidden size-4 flex flex-col gap-1 max-sm:z-50 ">
-          <span id="nav-line-out-side" class="w-full flex transition-300ms h-0.5 bg-black rounded "></span>
-          <span id="nav-line"
-            class="w-full h-0.5  bg-black transition-all relative after:w-full after:absolute after:rounded-md after:transition-all after:duration-300 after:h-full after:left-0 after:bg-black duration-300 rounded-md"></span>
-          <span id="nav-line-out-side-1" class="w-full transition-300ms flex  h-0.5 bg-black rounded "></span>
-        </div>
-        <div id="mobile-view"
-          class="flex transition-300ms max-sm:fixed max-sm:w-full max-sm:h-1/2 max-sm:left-0 max-sm:-top-full  max-sm:flex max-sm:justify-center max-sm:items-center max-sm:flex-col max-sm:bg-white gap-12">
-          <button class="text-black font-semibold">Login or Register</button>
-          <button
-            class="bg-twilight relative z-40 flex transition-300ms items-center justify-center  hover:bg-white border hover:border-twilight rounded-[60px] border-solid border-transparent text-white hover:text-twilight py-3 px-5 font-semibold text-sm">Start
-            Free Trial</button>
-        </div>
+          <a href="#hero">
+            <img src="./assets/images/svg/logo.svg" alt="logo">
+          </a>
+          <div onclick="navmenu()" class="sm:hidden overflow-hidden size-4 flex flex-col gap-1 max-sm:z-50 ">
+            <span id="nav-line-out-side" class="w-full flex transition-300ms h-0.5 bg-black rounded "></span>
+            <span id="nav-line"
+              class="w-full h-0.5  bg-black transition-all relative after:w-full after:absolute after:rounded-md after:transition-all after:duration-300 after:h-full after:left-0 after:bg-black duration-300 rounded-md"></span>
+            <span id="nav-line-out-side-1" class="w-full transition-300ms flex  h-0.5 bg-black rounded "></span>
+          </div>
+          <div id="mobile-view"
+            class="flex transition-300ms max-sm:fixed max-sm:w-full max-sm:h-1/2 max-sm:left-0 max-sm:-top-full  max-sm:flex max-sm:justify-center max-sm:items-center max-sm:flex-col max-sm:bg-white gap-12">
+            <button class="text-black font-semibold">Login or Register</button>
+            <button
+              class="bg-twilight relative z-40 flex transition-300ms items-center justify-center  hover:bg-white border hover:border-twilight rounded-[60px] border-solid border-transparent text-white hover:text-twilight py-3 px-5 font-semibold text-sm">Start
+              Free Trial</button>
+          </div>
         </div>
       </nav>
     </div>
@@ -85,35 +89,74 @@
           class="placeholder:text-venus  placeholder:text-xl max-lg:w-9/12  placeholder:font-medium placeholder:leading-[150%] w-full px-4 rounded-[60px] text-xl  mx-auto py-5 max-lg:py-4 max-md:py-3 outline-none">
       </div>
     </div>
-    <div class="md:min-h-[800px] w-full max-w-[1485px] max-md:justify-center max-md:flex max-md:items-center max-md:flex-col mx-auto relative">
-      <img src="./assets/images/webp/welcome-back.webp" alt="welcome-back" class="md:absolute max-md:w-9/12 top-0 left-0 max-w-[963px] w-full">
-      <img src="./assets/images/webp/welcome-back-table.webp" alt="table" class="md:absolute max-md:w-9/12 right-0 bottom-0 max-w-[963px] w-full">
-      
+    <div
+      class="md:min-h-[800px] w-full max-w-[1485px] max-md:justify-center max-md:flex max-md:items-center max-md:flex-col mx-auto relative">
+      <img src="./assets/images/webp/welcome-back.webp" alt="welcome-back"
+        class="md:absolute max-md:w-9/12 top-0 left-0 max-w-[963px] w-full">
+      <img src="./assets/images/webp/welcome-back-table.webp" alt="table"
+        class="md:absolute max-md:w-9/12 right-0 bottom-0 max-w-[963px] w-full">
+
     </div>
   </section>
-  <section class="py-14"> 
+  <section class="py-14">
     <div class="container mx-auto ">
       <div class="max-w-[1000px] mx-auto">
-      <h1
-      class="text-black text-65px max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
-      See your revenue grow in
-      real time with our dashboards.</h1>
+        <h1
+          class="text-black text-65px max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
+          See your revenue grow in
+          real time with our dashboards.</h1>
       </div>
     </div>
   </section>
-  <section class="py-14"> 
+  <section class="py-14">
     <div class="container mx-auto ">
-      <div class="max-w-[790px] mx-auto">
-      <h1
-      class="text-black text-65px max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
-      Marketing analytics that REALLY matter</h1>
+      <div class="max-w-[790px] mb-5 mx-auto">
+        <h1
+          class="text-black text-65px max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
+          Marketing analytics that REALLY matter</h1>
       </div>
       <div class="relative">
-        <img src="./assets/images/webp/welcome-back.webp" alt="welcome-back">
-        <img src="./assets/images/webp/world-map.webp" alt="world-map" class="absolute bottom-0">
-        <img src="/assets/images/webp/cost-per-click.webp" alt="cost-per-click" class="absolute right-0">
+        <img  src="./assets/images/webp/welcome-back.webp" alt="welcome-back" class="max-w-[988px] max-sm:w-9/12 mx-auto w-full">
+        <img src="./assets/images/webp/world-map.webp" alt="world-map" class="absolute left-[42%] -translate-x-1/2 shadow-images-shadow hidden lg:block rounded-[10px] bottom-[-6%]">
+        <img src="/assets/images/webp/cost-per-click.webp" alt="cost-per-click" class="absolute top-[22%]  shadow-images-shadow rounded-[10px] hidden lg:block right-[12%]">
       </div>
     </div>
+  </section>
+  <section class="py-14 px-3 flex flex-col justify-center">
+      <h1 class="text-black text-65px max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">How<span class="text-twilight"> Main Campaign </span>Sync Works</h1>
+      <div class="flex gap-5 mx-auto flex-wrap mt-16  justify-center">
+        <div class="max-w-[327px] w-full flex items-end min-h-[197px] rounded-3xl bg-blue-500 shadow-main-campaign">
+          <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
+            <h5 class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Step #1</h5>
+            <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Facebook user fills out your Facebook ad’s instant lead form</p>
+          </div>
+        </div>
+        <div class="max-w-[327px] w-full flex items-start min-h-[197px] rounded-3xl bg-blue-500 shadow-main-campaign">
+          <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
+            <h5 class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Step #2</h5>
+            <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Main Campaign automatically syncs inbound Facebook leads to sales CRM</p>
+          </div>
+        </div>
+        <div class="max-w-[327px] w-full flex items-end min-h-[197px] rounded-3xl bg-blue-500 shadow-main-campaign">
+          <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
+            <h5 class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Step #3</h5>
+            <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Lead makes a purchase in an offline setting (example; In person)</p>
+          </div>
+        </div>
+        <div class="max-w-[327px] w-full flex items-start min-h-[197px] rounded-3xl bg-blue-500 shadow-main-campaign">
+          <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
+            <h5 class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Step #4</h5>
+            <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Sales team updates sales CRM with the Lead’s purchase revenue</p>
+          </div>
+        </div>
+        <div class="max-w-[327px] w-full flex items-end min-h-[197px] rounded-3xl bg-blue-500 shadow-main-campaign">
+          <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
+            <h5 class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Step #5</h5>
+            <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Main Campaign attributes Lead’s purchase revenue to Facebook marketing campaigns. Now you know exactly which campaigns are driving purchases for your business</p>
+          </div>
+        </div>
+      </div>
+
   </section>
   <script src="./assets/js/app.js"></script>
 </body>
