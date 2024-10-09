@@ -3,6 +3,11 @@
 }
 @font-face {
     font-family: thicccboi;
+    src: url(../font/THICCCBOI-Light.ttf);
+    font-weight: 300;
+  }
+@font-face {
+    font-family: thicccboi;
     src: url(../font/THICCCBOI-Regular.ttf);
     font-weight: 400;
   }
@@ -62,3 +67,7 @@
   .footer-slider .slick-dots{
     display: none !important;
   }
+::selection{
+background-color: black;
+color: white;
+}

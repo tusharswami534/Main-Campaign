@@ -16,7 +16,7 @@ window.addEventListener('scroll', function() {
   });
 // businesses-generate-slider 
 $('.businesses-generate-slider').slick({
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 300,
   slidesToShow: 3,
