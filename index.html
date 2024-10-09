@@ -21,7 +21,14 @@
   <meta property="twitter:description" content="The Most Powerful Offline Lead Conversion Data for your Business." />
   <meta property="twitter:image" content="/meta-image.webp" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./assets/images/svg/sharing.svg" type="image/x-icon">
   <script>
     tailwind.config = {
       theme: {
@@ -39,7 +46,8 @@
             venus: '#7D889E',
             dark: '#14142B',
             alabaster: '#FAF9F6',
-            quillgrey: '#D9D9D9'
+            quillgrey: '#D9D9D9',
+            nebula: '#DAD7D7',
           },
           fontSize: {
             '80px': '80px',
@@ -50,6 +58,8 @@
             'images-shadow': ' 5px 10px 50px 0px #0000001A',
             'common-shadow': '  0px 4px 30px 0px #00000026',
             'btn-shadow': ' 0px 10px 30px 0px #00000026',
+            'jhon-data': '4px 10px 50px 0px #5C5C5C26 , 4px 15px 30px 0px #0000000D',
+            'leads-center': '0px 10px 15px 0px #00000026'
           }
         }
       }
@@ -103,6 +113,7 @@
 
     </div>
   </section>
+
   <section class="py-14 px-3">
     <div class="container mx-auto ">
       <div class="max-w-[1000px] mx-auto">
@@ -111,42 +122,63 @@
           See your revenue grow in
           real time with our dashboards.</h1>
       </div>
-      <div class="max-w-[1140px] lg:justify-center mt-8 max-lg:mt-6 max-sm:mt-4 gap-5 mx-auto flex items-center overflow-x-auto">
-        <button class="py-5 px-8 max-2xl:min-w-[241px] font-bold bg-twilight text-white rounded-[60px] max-xl:text-xl max-lg:text-lg max-md:text-base text-22px">CRM Integrations</button>
-        <button class="py-4 px-6 min-w-[337px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Marketing Platform Integrations</button>
-        <button class="py-4 px-7 min-w-[143px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Analytics</button>
-        <button class="py-4 px-6 min-w-[265px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Easy, Safe and Secured</button>
+      <div
+        class="max-w-[1140px] lg:justify-center mt-8 max-lg:mt-6 max-sm:mt-4 gap-5 mx-auto flex items-center overflow-x-auto">
+        <button
+          class="py-5 px-8 max-2xl:min-w-[241px] font-bold bg-twilight text-white rounded-[60px] max-xl:text-xl max-lg:text-lg max-md:text-base text-22px">CRM
+          Integrations</button>
+        <button
+          class="py-4 px-6 min-w-[337px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Marketing
+          Platform Integrations</button>
+        <button
+          class="py-4 px-7 min-w-[143px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Analytics</button>
+        <button
+          class="py-4 px-6 min-w-[265px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Easy,
+          Safe and Secured</button>
       </div>
-      <div class="max-w-[1297px] pt-1 mt-7 relative mx-auto min-h-[467px] flex items-end shadow-common-shadow bg-blue-500 rounded-[48px] w-full">
-        <img src="./assets/images/svg/down-arrow.svg" alt="down-arrow" class="absolute max-sm:hidden bottom-[-13%] -z-10 left-[-4%]">
-        <img src="./assets/images/svg/up-arow.svg" alt="up-arow" class="absolute max-sm:hidden top-[-13%] right-[-4.5%] -z-10">
+      <div
+        class="max-w-[1297px] pt-1 mt-7 relative mx-auto min-h-[467px] flex items-end shadow-common-shadow bg-blue-500 rounded-[48px] w-full">
+        <img src="./assets/images/svg/down-arrow.svg" alt="down-arrow"
+          class="absolute max-sm:hidden bottom-[-13%] -z-10 left-[-4%]">
+        <img src="./assets/images/svg/up-arow.svg" alt="up-arow"
+          class="absolute max-sm:hidden top-[-13%] right-[-4.5%] -z-10">
         <div class="w-full px-5 bg-white max-lg:py-6 flex justify-center items-center min-h-[459px] rounded-[48px]">
           <div class="max-w-[1196px] gap-y-6 flex flex-col mx-auto">
             <div class="flex gap-5 items-start">
               <img src="./assets/images/svg/checked.svg" alt="checked" class="mt-1.5">
-              <p class="text-lg max-lg:text-base text-dark font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p class="text-lg max-lg:text-base text-dark font-normal">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
             <div class="flex gap-5 items-start">
               <img src="./assets/images/svg/checked.svg" alt="checked" class="mt-1.5">
-              <p class="text-lg max-lg:text-base text-dark font-bold">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+              <p class="text-lg max-lg:text-base text-dark font-bold">Sed ut perspiciatis unde omnis iste natus error
+                sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
             </div>
             <div class="flex gap-5 items-start">
               <img src="./assets/images/svg/checked.svg" alt="checked" class="mt-1.5">
-              <p class="text-lg max-lg:text-base text-dark font-bold">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+              <p class="text-lg max-lg:text-base text-dark font-bold">Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
             </div>
             <div class="flex gap-5 items-start">
               <img src="./assets/images/svg/checked.svg" alt="checked" class="mt-1.5">
-              <p class="text-lg max-lg:text-base text-dark font-bold">Ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.  </p>
+              <p class="text-lg max-lg:text-base text-dark font-bold">Ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
             </div>
             <div class="flex gap-5 items-start">
               <img src="./assets/images/svg/checked.svg" alt="checked" class="mt-1.5">
-              <p class="text-lg max-lg:text-base text-dark font-bold">Euis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p class="text-lg max-lg:text-base text-dark font-bold">Euis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <section class="py-14 px-3">
     <div class="container mx-auto ">
       <div class="max-w-[790px] mb-5 mx-auto">
@@ -155,103 +187,145 @@
           Marketing analytics that REALLY matter</h1>
       </div>
       <div class="relative">
-        <img  src="./assets/images/webp/welcome-back.webp" alt="welcome-back" class="max-w-[988px] max-sm:w-9/12 mx-auto w-full">
-        <img src="./assets/images/webp/world-map.webp" alt="world-map" class="absolute left-[42%] -translate-x-1/2 shadow-images-shadow hidden lg:block rounded-[10px] bottom-[-6%]">
-        <img src="/assets/images/webp/cost-per-click.webp" alt="cost-per-click" class="absolute top-[22%]  shadow-images-shadow rounded-[10px] hidden lg:block right-[12%]">
+        <img src="./assets/images/webp/welcome-back.webp" alt="welcome-back"
+          class="max-w-[988px] max-sm:w-9/12 mx-auto w-full">
+        <img src="./assets/images/webp/world-map.webp" alt="world-map"
+          class="absolute left-[42%] -translate-x-1/2 shadow-images-shadow hidden lg:block rounded-[10px] bottom-[-6%]">
+        <img src="/assets/images/webp/cost-per-click.webp" alt="cost-per-click"
+          class="absolute top-[22%]  shadow-images-shadow rounded-[10px] hidden lg:block right-[12%]">
       </div>
-      <div class="max-w-[1140px] lg:justify-center mt-16 p-2 max-lg:mt-6 max-sm:mt-4 gap-5 mx-auto flex items-center overflow-x-auto">
-        <button class="py-5 px-8 max-2xl:min-w-[161px] font-bold bg-twilight text-white rounded-[60px] max-xl:text-xl max-lg:text-lg max-md:text-base text-22px">Spending</button>
-        <button class="py-4 px-6 min-w-[112px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Reach</button>
-        <button class="py-4 px-7 min-w-[123px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Revenue</button>
-        <button class="py-4 px-6 min-w-[180px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Inbound Leads</button>
-        <button class="py-4 px-6 min-w-[154px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Campaigns</button>
+      <div
+        class="max-w-[1140px] lg:justify-center mt-16 p-2 max-lg:mt-6 max-sm:mt-4 gap-5 mx-auto flex items-center overflow-x-auto">
+        <button
+          class="py-5 px-8 max-2xl:min-w-[161px] font-bold bg-twilight text-white rounded-[60px] max-xl:text-xl max-lg:text-lg max-md:text-base text-22px">Spending</button>
+        <button
+          class="py-4 px-6 min-w-[112px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Reach</button>
+        <button
+          class="py-4 px-7 min-w-[123px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Revenue</button>
+        <button
+          class="py-4 px-6 min-w-[180px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Inbound
+          Leads</button>
+        <button
+          class="py-4 px-6 min-w-[154px] font-medium bg-alabaster text-venus rounded-[60px] border border-solid border-quillgrey text-xl leading-[110%] hover:bg-twilight hover:bg-opacity-50 hover:text-white transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm">Campaigns</button>
       </div>
-      <div class="max-w-[1123px] pt-1 mt-7 relative mx-auto min-h-[320px] flex items-end shadow-common-shadow bg-blue-500 rounded-[48px] w-full">
-        <img src="./assets/images/svg/down-arrow.svg" alt="down-arrow" class="absolute max-md:hidden bottom-[-18%] left-[88%] -z-10">
-     
+      <div
+        class="max-w-[1123px] pt-1 mt-7 relative mx-auto min-h-[320px] flex items-end shadow-common-shadow bg-blue-500 rounded-[48px] w-full">
+        <img src="./assets/images/svg/down-arrow.svg" alt="down-arrow"
+          class="absolute max-md:hidden bottom-[-18%] left-[88%] -z-10">
+
         <div class="w-full px-5 bg-white max-lg:py-6 flex justify-center items-center min-h-[314px] rounded-[48px]">
           <div class="max-w-[1196px] gap-y-6 flex flex-col mx-auto">
             <div class="flex gap-5 items-start">
               <img src="./assets/images/svg/checked.svg" alt="checked" class="mt-1.5">
-              <p class="text-lg max-lg:text-base text-dark font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="text-lg max-lg:text-base text-dark font-normal">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="flex gap-5 items-start">
               <img src="./assets/images/svg/checked.svg" alt="checked" class="mt-1.5">
-              <p class="text-lg max-lg:text-base text-dark font-bold">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.o. </p>
+              <p class="text-lg max-lg:text-base text-dark font-bold">Sed ut perspiciatis unde omnis iste natus error
+                sit voluptatem accusantium doloremque laudantium.o. </p>
             </div>
             <div class="flex gap-5 items-start">
               <img src="./assets/images/svg/checked.svg" alt="checked" class="mt-1.5">
-              <p class="text-lg max-lg:text-base text-dark font-bold">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p class="text-lg max-lg:text-base text-dark font-bold">Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
             <div class="flex gap-5 items-start">
               <img src="./assets/images/svg/checked.svg" alt="checked" class="mt-1.5">
-              <p class="text-lg max-lg:text-base text-dark font-bold">Ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+              <p class="text-lg max-lg:text-base text-dark font-bold">Ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <section class="py-14 px-3 flex flex-col justify-center">
-      <h1 class="text-black text-65px max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">How<span class="text-twilight"> Main Campaign </span>Sync Works</h1>
-      <div class="flex gap-5 mx-auto flex-wrap mt-16  justify-center">
-        <div class="max-w-[327px] w-full flex items-end min-h-[197px] rounded-3xl bg-blue-500 shadow-common-shadow">
-          <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
-            <h5 class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Step #1</h5>
-            <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Facebook user fills out your Facebook ad’s instant lead form</p>
-          </div>
-        </div>
-        <div class="max-w-[327px] w-full flex items-start min-h-[197px] rounded-3xl bg-blue-500 shadow-common-shadow">
-          <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
-            <h5 class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Step #2</h5>
-            <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Main Campaign automatically syncs inbound Facebook leads to sales CRM</p>
-          </div>
-        </div>
-        <div class="max-w-[327px] w-full flex items-end min-h-[197px] rounded-3xl bg-blue-500 shadow-common-shadow">
-          <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
-            <h5 class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Step #3</h5>
-            <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Lead makes a purchase in an offline setting (example; In person)</p>
-          </div>
-        </div>
-        <div class="max-w-[327px] w-full flex items-start min-h-[197px] rounded-3xl bg-blue-500 shadow-common-shadow">
-          <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
-            <h5 class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Step #4</h5>
-            <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Sales team updates sales CRM with the Lead’s purchase revenue</p>
-          </div>
-        </div>
-        <div class="max-w-[327px] w-full flex items-end min-h-[197px] rounded-3xl bg-blue-500 shadow-common-shadow">
-          <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
-            <h5 class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Step #5</h5>
-            <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Main Campaign attributes Lead’s purchase revenue to Facebook marketing campaigns. Now you know exactly which campaigns are driving purchases for your business</p>
-          </div>
+    <h1
+      class="text-black text-65px max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
+      How<span class="text-twilight"> Main Campaign </span>Sync Works</h1>
+    <div class="flex gap-5 mx-auto flex-wrap mt-16  justify-center">
+      <div class="max-w-[327px] w-full flex items-end min-h-[197px] rounded-3xl bg-blue-500 shadow-common-shadow">
+        <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
+          <h5
+            class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">
+            Step #1</h5>
+          <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Facebook user
+            fills out your Facebook ad’s instant lead form</p>
         </div>
       </div>
+      <div class="max-w-[327px] w-full flex items-start min-h-[197px] rounded-3xl bg-blue-500 shadow-common-shadow">
+        <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
+          <h5
+            class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">
+            Step #2</h5>
+          <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Main Campaign
+            automatically syncs inbound Facebook leads to sales CRM</p>
+        </div>
+      </div>
+      <div class="max-w-[327px] w-full flex items-end min-h-[197px] rounded-3xl bg-blue-500 shadow-common-shadow">
+        <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
+          <h5
+            class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">
+            Step #3</h5>
+          <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Lead makes a
+            purchase in an offline setting (example; In person)</p>
+        </div>
+      </div>
+      <div class="max-w-[327px] w-full flex items-start min-h-[197px] rounded-3xl bg-blue-500 shadow-common-shadow">
+        <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
+          <h5
+            class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">
+            Step #4</h5>
+          <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Sales team
+            updates sales CRM with the Lead’s purchase revenue</p>
+        </div>
+      </div>
+      <div class="max-w-[327px] w-full flex items-end min-h-[197px] rounded-3xl bg-blue-500 shadow-common-shadow">
+        <div class="w-full min-h-[192px] rounded-3xl px-3 bg-white">
+          <h5
+            class="font-bold text-center text-twilight text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">
+            Step #5</h5>
+          <p class="text-venus text-base font-medium text-center -mt-0.5 max-lg:text-sm max-md:text-xs">Main Campaign
+            attributes Lead’s purchase revenue to Facebook marketing campaigns. Now you know exactly which campaigns are
+            driving purchases for your business</p>
+        </div>
+      </div>
+    </div>
   </section>
+
   <section class="py-14 ">
     <div class="max-w-[1500px] px-3 mx-auto">
-    <div class="max-w-[991px] mb-5 mx-auto">
-      <h1
-        class="text-black text-65px max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
-        Understand <span class="text-twilight">how many sales</span> are driven from your campaigns</h1>
-    </div>
-    <div class="flex-wrap flex">
-      <div class="w-5/12 flex flex-col justify-center  max-lg:w-full">
-        <p class="text-dark ">The issue with tracking marketing data in an online setting is that you’re not getting the full picture. Although you’re still making sales offline. it’s nearly impossible to track exactly what online campaigns are doin the job, and which ones aren’t...until now.</p>
-        <p class="text-dark mt-5">With Main Campaign, you can integrate your conversion data with Facebook conversion API and Offline Conversion Tracking directly.</p>
-        <div class="flex gap-4 mt-14">
-        <button class="bg-twilight shadow-btn-shadow text-white font-bold py-3 px-6 rounded-[50px]">Get Started</button>
-        <div class="flex flex-col">
-          <p class="font-bold text-lg">Free 14 days trial.</p>
-          <p class="font-medium">no credit card required</p>
+      <div class="max-w-[991px] mb-5 mx-auto">
+        <h1
+          class="text-black text-65px max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
+          Understand <span class="text-twilight">how many sales</span> are driven from your campaigns</h1>
+      </div>
+      <div class="flex-wrap flex">
+        <div class="w-5/12 flex flex-col justify-center  max-lg:w-full">
+          <p class="text-dark ">The issue with tracking marketing data in an online setting is that you’re not getting
+            the full picture. Although you’re still making sales offline. it’s nearly impossible to track exactly what
+            online campaigns are doin the job, and which ones aren’t...until now.</p>
+          <p class="text-dark mt-5">With Main Campaign, you can integrate your conversion data with Facebook conversion
+            API and Offline Conversion Tracking directly.</p>
+          <div class="flex gap-4 mt-14">
+            <button class="bg-twilight shadow-btn-shadow text-white font-bold py-3 px-6 rounded-[50px]">Get
+              Started</button>
+            <div class="flex flex-col">
+              <p class="font-bold text-lg">Free 14 days trial.</p>
+              <p class="font-medium">no credit card required</p>
+            </div>
+          </div>
         </div>
+        <div class="w-7/12 max-lg:w-full ">
+          <img src="./assets/images/webp/how-many-images.webp" alt="how-many-images" class="w-full">
         </div>
       </div>
-      <div class="w-7/12 max-lg:w-full ">
-        <img src="./assets/images/webp/how-many-images.webp" alt="how-many-images" class="w-full">
-      </div> 
-    </div>
     </div>
   </section>
+
   <section class="py-14 px-3">
     <div class="max-w-[1333px] mb-5 mx-auto">
       <h1
@@ -259,29 +333,215 @@
         With Main Campaign, <span class="text-twilight"> Your Privacy Matters</span></h1>
     </div>
     <div class="max-w-[1573px] flex-wrap justify-center  gap-14 flex mx-auto">
-        <div class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12  shadow-common-shadow items-center rounded-3xl flex flex-col">
-          <img src="./assets/images/svg/sharing.svg" alt="sharing" class="size-20 mb-5">
-          <p class="text-twilight text-xl font-bold max-lg:text-lg  max-md:text-base text-center pb-4 -mt-0.5">No Sharing</p>
-          <p class="text-venus font-medium text-center">We Keep your information secure. We will never share any lead data to other companies.</p>
-        </div>
-        <div class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12  shadow-common-shadow items-center rounded-3xl flex flex-col">
-          <img src="./assets/images/svg/gdrp.svg" alt="sharing" class="size-20 mb-5">
-          <p class="text-twilight text-xl font-bold max-lg:text-lg  max-md:text-base text-center pb-2 -mt-0.5">GDPR, CCPA, PCI, Facebook, Google compliant</p>
-          <p class="text-venus font-medium text-center">Big Companies choose to work with us for a reason. Get a trusted partner that puts your security first.</p>
-        </div>
-        <div class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12  shadow-common-shadow items-center rounded-3xl flex flex-col">
-          <img src="./assets/images/svg/security.svg" alt="sharing" class="size-20 mb-5">
-          <p class="text-twilight text-xl font-bold max-lg:text-lg  max-md:text-base text-center pb-4 -mt-0.5">Advanced Security</p>
-          <p class="text-venus font-medium text-center">Laser-targeted segmentation, Local store distribution, automation rules and filters, and more. We put security first.</p>
-        </div>
-        <div class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12  shadow-common-shadow items-center rounded-3xl flex flex-col">
-          <img src="./assets/images/svg/marketing.svg" alt="sharing" class="size-20 mb-5">
-          <p class="text-twilight text-xl font-bold max-lg:text-lg  max-md:text-base text-center pb-4 -mt-0.5">Conset-based Marketing</p>
-          <p class="text-venus font-medium text-center">Making conset-based marketing the most scalable, efficient, and safest method for customer acquistion.</p>
-        </div>
-       
+      <div
+        class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12  shadow-common-shadow items-center rounded-3xl flex flex-col">
+        <img src="./assets/images/svg/sharing.svg" alt="sharing" class="size-20 mb-5">
+        <p class="text-twilight text-xl font-bold max-lg:text-lg  max-md:text-base text-center pb-4 -mt-0.5">No Sharing
+        </p>
+        <p class="text-venus font-medium text-center">We Keep your information secure. We will never share any lead data
+          to other companies.</p>
+      </div>
+      <div
+        class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12  shadow-common-shadow items-center rounded-3xl flex flex-col">
+        <img src="./assets/images/svg/gdrp.svg" alt="sharing" class="size-20 mb-5">
+        <p class="text-twilight text-xl font-bold max-lg:text-lg  max-md:text-base text-center pb-2 -mt-0.5">GDPR, CCPA,
+          PCI, Facebook, Google compliant</p>
+        <p class="text-venus font-medium text-center">Big Companies choose to work with us for a reason. Get a trusted
+          partner that puts your security first.</p>
+      </div>
+      <div
+        class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12  shadow-common-shadow items-center rounded-3xl flex flex-col">
+        <img src="./assets/images/svg/security.svg" alt="sharing" class="size-20 mb-5">
+        <p class="text-twilight text-xl font-bold max-lg:text-lg  max-md:text-base text-center pb-4 -mt-0.5">Advanced
+          Security</p>
+        <p class="text-venus font-medium text-center">Laser-targeted segmentation, Local store distribution, automation
+          rules and filters, and more. We put security first.</p>
+      </div>
+      <div
+        class="max-w-[351px] min-h-[312px] px-[26px] pt-8 pb-12  shadow-common-shadow items-center rounded-3xl flex flex-col">
+        <img src="./assets/images/svg/marketing.svg" alt="sharing" class="size-20 mb-5">
+        <p class="text-twilight text-xl font-bold max-lg:text-lg  max-md:text-base text-center pb-4 -mt-0.5">
+          Conset-based Marketing</p>
+        <p class="text-venus font-medium text-center">Making conset-based marketing the most scalable, efficient, and
+          safest method for customer acquistion.</p>
+      </div>
+
     </div>
   </section>
+
+  <section class="py-14 px-3">
+    <div class="max-w-[887px] mb-5 mx-auto">
+      <h1
+        class="text-black text-65px max-xl:text-6xl pb-20 -mb-1.5 max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
+        Businesses generate more
+        revenue with Main Campaign</h1>
+    </div>
+    <div class="max-w-[1432px] businesses-generate-slider  mx-auto">
+      <div
+        class="max-w-[446px] w-full flex items-end min-h-[197px] rounded-3xl pt-1.5 bg-blue-500 shadow-common-shadow">
+        <div class="w-full min-h-[192px] rounded-3xl justify-center flex flex-col  px-4 bg-white">
+          <img src="./assets/images/svg/next-tech.svg" alt="next-tech"
+            class="size-[163px] mx-auto shadow-common-shadow rounded-full -mt-20">
+          <h5 class="font-bold text-black text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Next
+            Technologies</h5>
+          <p class="text-venus text-base font-medium -mt-0.5 max-lg:text-sm max-md:text-xs">“Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.” </p>
+          <div class="flex gap-2 pt-8 mt-0.5">
+            <img src="./assets/images/webp/James.webp" alt="James">
+            <div>
+              <p class="text-xl max-lg:text-lg max-md:text-base font-bold">James</p>
+              <p class="text-venus text-sm">Co-Founder at Slash next technologies.</p>
+            </div>
+          </div>
+          <div class="w-full h-0.5 my-7 bg-nebula"></div>
+          <div class="w-full flex justify-center pb-7">
+            <button class="text-sm font-bold bg-twilight py-1.5 text-white rounded-[60px] px-12">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-[446px] w-full flex items-end min-h-[197px] rounded-3xl pt-1.5 bg-blue-500 shadow-common-shadow">
+        <div class="w-full min-h-[192px] rounded-3xl justify-center flex flex-col  px-4 bg-white">
+          <img src="./assets/images/svg/next-tech.svg" alt="next-tech"
+            class="size-[163px] mx-auto shadow-common-shadow rounded-full -mt-20">
+          <h5 class="font-bold text-black text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Next
+            Technologies</h5>
+          <p class="text-venus text-base font-medium -mt-0.5 max-lg:text-sm max-md:text-xs">“Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.” </p>
+          <div class="flex gap-2 pt-8 mt-0.5">
+            <img src="./assets/images/webp/James.webp" alt="James">
+            <div>
+              <p class="text-xl max-lg:text-lg max-md:text-base font-bold">James</p>
+              <p class="text-venus text-sm">Co-Founder at Slash next technologies.</p>
+            </div>
+          </div>
+          <div class="w-full h-0.5 my-7 bg-nebula"></div>
+          <div class="w-full flex justify-center pb-7">
+            <button class="text-sm font-bold bg-twilight py-1.5 text-white rounded-[60px] px-12">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-[446px] w-full flex items-end min-h-[197px] rounded-3xl pt-1.5 bg-blue-500 shadow-common-shadow">
+        <div class="w-full min-h-[192px] rounded-3xl justify-center flex flex-col  px-4 bg-white">
+          <img src="./assets/images/svg/next-tech.svg" alt="next-tech"
+            class="size-[163px] mx-auto shadow-common-shadow rounded-full -mt-20">
+          <h5 class="font-bold text-black text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Next
+            Technologies</h5>
+          <p class="text-venus text-base font-medium -mt-0.5 max-lg:text-sm max-md:text-xs">“Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.” </p>
+          <div class="flex gap-2 pt-8 mt-0.5">
+            <img src="./assets/images/webp/James.webp" alt="James">
+            <div>
+              <p class="text-xl max-lg:text-lg max-md:text-base font-bold">James</p>
+              <p class="text-venus text-sm">Co-Founder at Slash next technologies.</p>
+            </div>
+          </div>
+          <div class="w-full h-0.5 my-7 bg-nebula"></div>
+          <div class="w-full flex justify-center pb-7">
+            <button class="text-sm font-bold bg-twilight py-1.5 text-white rounded-[60px] px-12">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-[446px] w-full flex items-end min-h-[197px] rounded-3xl pt-1.5 bg-blue-500 shadow-common-shadow">
+        <div class="w-full min-h-[192px] rounded-3xl justify-center flex flex-col  px-4 bg-white">
+          <img src="./assets/images/svg/next-tech.svg" alt="next-tech"
+            class="size-[163px] mx-auto shadow-common-shadow rounded-full -mt-20">
+          <h5 class="font-bold text-black text-2xl pt-4 pb-4 max-xl:text-xl max-md:text-lg max-sm:text-base">Next
+            Technologies</h5>
+          <p class="text-venus text-base font-medium -mt-0.5 max-lg:text-sm max-md:text-xs">“Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.” </p>
+          <div class="flex gap-2 pt-8 mt-0.5">
+            <img src="./assets/images/webp/James.webp" alt="James">
+            <div>
+              <p class="text-xl max-lg:text-lg max-md:text-base font-bold">James</p>
+              <p class="text-venus text-sm">Co-Founder at Slash next technologies.</p>
+            </div>
+          </div>
+          <div class="w-full h-0.5 my-7 bg-nebula"></div>
+          <div class="w-full flex justify-center pb-7">
+            <button class="text-sm font-bold bg-twilight py-1.5 text-white rounded-[60px] px-12">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 relative max-w-[1920px] overflow-hidden mx-auto px-3">
+    <img src="./assets/images/webp/footer-layer.webp" alt="footer-layer" class="absolute -bottom-[25%] left-0">
+    <div class="max-w-[887px] flex flex-col items-center mb-5 mx-auto">
+      <h1
+        class="text-black text-65px max-xl:text-6xl pb-20 -mb-1.5 max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[120%] text-center font-bold text">
+        Are you ready to scale?</h1>
+      <button class="bg-twilight text-white font-medium text-base max-md:text-sm rounded-[60px] py-5 px-7">Start My Free
+        Trial</button>
+    </div>
+    <div class="container relative flex justify-center rounded-[31px]">
+      <img class="shadow-leads-center rounded-[31px] max-md:w-9/12" src="./assets/images/webp/leads-center.webp"
+        alt="leads-center">
+      <img class="shadow-jhon-data absolute top-[54%] max-2xl:hidden left-[18%]"
+        src="./assets/images/webp/john-wick-data.webp" alt="john-wick-data">
+    </div>
+  </section>
+
+  <footer id="footer" class="py-14 px-3 bg-alabaster">
+    <div class="max-w-[1600px] mx-auto">
+      <div class="footer-slider max-w-[1355px] mx-auto py-14 ">
+        <img src="./assets/images/svg/noguchi.svg" alt="noguchi" class="max-w-[117px] max-h-7">
+        <img src="./assets/images/svg/airbnb.svg" alt="noguchi" class="max-w-[118px] max-h-9">
+        <img src="./assets/images/svg/probusiness.svg" alt="noguchi" class="max-w-[117px] max-h-7">
+        <img src="./assets/images/svg/ariba.svg" alt="noguchi" class="max-w-[117px] max-h-8">
+        <img src="./assets/images/svg/idesign.svg" alt="noguchi" class="max-w-[117px] max-h-7">
+        <img src="./assets/images/svg/brooks.svg" alt="noguchi" class="max-w-[117px] max-h-3.5">
+        <img src="./assets/images/svg/okuma.svg" alt="noguchi" class="max-w-[117px] max-h-7">
+        <img src="./assets/images/svg/island.svg" alt="noguchi" class="max-w-[117px] max-h-10">
+        <img src="./assets/images/svg/idesign.svg" alt="noguchi" class="max-w-[117px] max-h-7">
+      </div>
+      <div class="w-full border border-dashed border-twilight border-b-2 "></div>
+      <div class="max-w-[1420px] mx-auto">
+        <div class="flex-wrap flex">
+          <div class="max-lg:w-full w-3/12">
+            <a href="#home"> <img src="./assets/images/svg/logo.svg" alt="logo"></a>
+          </div>
+          <div class="max-lg:w-6/12  w-3/12">
+            <ul class="flex flex-col gap-2">
+              <li class="font-bold text-xl max-md:text-lg mb-4">company</li>
+              <li><a href="#footer">Home</a></li>
+              <li><a href="#footer">About us</a></li>
+              <li><a href="#footer">Pricing</a></li>
+              <li><a href="#footer">Start free trial</a></li>
+            </ul>
+          </div>
+          <div class="max-lg:w-6/12  w-3/12">
+            <ul class="flex flex-col gap-2">
+              <li class="font-bold text-xl max-md:text-lg mb-4">Support</li>
+              <li><a href="#footer">Contact us</a></li>
+              <li><a href="#footer">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="max-lg:w-6/12  w-3/12">
+            <div>
+              <p class="font-bold text-xl max-md:text-lg mb-5">subscribe</p>
+              <div class="max-w-[447px]">
+              <input type="email" class="w-full px-5 py-5 outline-none" placeholder="Enter email address" name="" id="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./assets/js/app.js"></script>
 </body>
 

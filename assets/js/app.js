@@ -14,3 +14,61 @@ window.addEventListener('scroll', function() {
       nav.classList.remove('bg-white');
     }
   });
+// businesses-generate-slider 
+$('.businesses-generate-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerMode: true,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2
+      }
+    },
+  ]
+});
+// footer slider 
+$('.footer-slider').slick({
+  dots: false,
+  speed : 2000,
+  infinite: true,
+  slidesToShow: 8,
+  slidesToScroll: 1,
+  variableWidth: true,
+  // autoplay: true,
+  // autoplaySpeed: 0,
+  // cssEase : 'linear' , 
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        centerMode: true,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2
+      }
+    },
+  ]
+});

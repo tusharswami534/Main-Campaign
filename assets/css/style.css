@@ -27,3 +27,38 @@
   *{
   font-family: "thicccboi", sans-serif;
   }
+  .businesses-generate-slider .slick-list {
+    padding-top: 85px;
+    padding-bottom: 50px;
+    .slick-track{
+      display: flex !important;
+      gap: 47px;
+    }
+  }
+
+  .businesses-generate-slider .slick-dots li {
+    background-color: #faf9f6;
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+  }
+  .businesses-generate-slider .slick-dots .slick-active {
+    width: 10px;
+    background-color: darkblue;
+    border-radius: 21px;
+    height: 10px;
+  }
+  
+  .businesses-generate-slider .slick-dots li button:before {
+    color: transparent !important;
+  }
+  /* footer slider  */
+  .footer-slider .slick-list .slick-track{
+    display: flex !important;
+    gap: 47px;
+    align-items: center;
+  }
+
+  .footer-slider .slick-dots{
+    display: none !important;
+  }
