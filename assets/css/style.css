@@ -1,73 +1,85 @@
-.transition-300ms{
-    transition: all 300ms linear;
+* {
+  font-family: "thicccboi", sans-serif;;
 }
-@font-face {
-    font-family: thicccboi;
-    src: url(../font/THICCCBOI-Light.ttf);
-    font-weight: 300;
-  }
-@font-face {
-    font-family: thicccboi;
-    src: url(../font/THICCCBOI-Regular.ttf);
-    font-weight: 400;
-  }
-  
-  @font-face {
-    font-family: thicccboi;
-    src: url(../font/THICCCBOI-Medium.ttf);
-    font-weight: 500;
-  }
-  
-  @font-face {
-    font-family: thicccboi;
-    src: url(../font/THICCCBOI-SemiBold.ttf);
-    font-weight: 600;
-  }
-  
-  @font-face {
-    font-family: thicccboi;
-    src: url(../font/THICCCBOI-Bold.ttf);
-    font-weight: 700;
-  }
-  *{
-  font-family: "thicccboi", sans-serif;
-  }
-  .businesses-generate-slider .slick-list {
-    padding-top: 85px;
-    padding-bottom: 50px;
-    .slick-track{
-      display: flex !important;
-      gap: 47px;
-    }
-  }
 
-  .businesses-generate-slider .slick-dots li {
-    background-color: #faf9f6;
-    border-radius: 100px;
-    width: 10px;
-    height: 10px;
-  }
-  .businesses-generate-slider .slick-dots .slick-active {
-    width: 10px;
-    background-color: darkblue;
-    border-radius: 21px;
-    height: 10px;
-  }
-  
-  .businesses-generate-slider .slick-dots li button:before {
-    color: transparent !important;
-  }
-  /* footer slider  */
-  .footer-slider .slick-list .slick-track{
+.transition-300ms {
+  transition: all 300ms linear;
+}
+
+@font-face {
+  font-family: thicccboi;
+  src: url(../font/THICCCBOI-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: thicccboi;
+  src: url(../font/THICCCBOI-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: thicccboi;
+  src: url(../font/THICCCBOI-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: thicccboi;
+  src: url(../font/THICCCBOI-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: thicccboi;
+  src: url(../font/THICCCBOI-Bold.ttf);
+  font-weight: 700;
+}
+
+.businesses-generate-slider .slick-next {
+  display: none !important;
+}
+
+.businesses-generate-slider .slick-list {
+  padding-top: 85px !important;
+  padding-bottom: 50px;
+
+  .slick-track {
     display: flex !important;
     gap: 47px;
-    align-items: center;
   }
+}
 
-  .footer-slider .slick-dots{
-    display: none !important;
-  }
-::selection{
-background-color: black;
-color: white;
+.businesses-generate-slider .slick-dots li {
+  background-color: #FAF9F6;
+  border-radius: 100px;
+  width: 10px;
+  height: 10px;
+}
+
+.businesses-generate-slider .slick-dots .slick-active {
+  width: 10px;
+  background-color: darkblue;
+  border-radius: 21px;
+  height: 10px;
+}
+
+.businesses-generate-slider .slick-dots li button:before {
+  color: transparent !important;
+}
+
+/* footer slider  */
+.footer-slider .slick-list .slick-track {
+  display: flex !important;
+  gap: 47px;
+  align-items: center;
+}
+
+.footer-slider .slick-dots {
+  display: none !important;
+}
+
+::selection {
+  background-color: black;
+  color: white;
 }
