@@ -12,9 +12,11 @@ window.addEventListener('scroll', function() {
       nav.classList.add('bg-white');
       nav.classList.remove('top-[65px]');
       nav.classList.add('top-0');
+      nav.classList.add('shadow-common-shadow');
     } else {
       nav.classList.remove('bg-white');
       nav.classList.add('top-[65px]');
+      nav.classList.remove('shadow-common-shadow');
     }
   });
 // businesses-generate-slider 
@@ -22,6 +24,7 @@ $('.businesses-generate-slider').slick({
   dots: true,
   infinite: true,
   speed: 300,
+  centerMode: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   variableWidth: true,
@@ -31,7 +34,7 @@ $('.businesses-generate-slider').slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        centerMode: false,
+        centerMode: true,
         infinite: true,
       }
     },
@@ -52,12 +55,9 @@ $('.footer-slider').slick({
   infinite: true,
   slidesToShow: 8,
   slidesToScroll: 1,
-  nextArrow : '.next',
-  prevArrow : '.prev',
-  variableWidth: true,
-  autoplay: true,
-  autoplaySpeed: 0,
-  cssEase : 'linear' , 
+  nextArrow : '.prev',
+  prevArrow : '.next',
+  variableWidth: true,  
   responsive: [
     {
       breakpoint: 1024,
@@ -73,7 +73,8 @@ $('.footer-slider').slick({
       breakpoint: 600,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        dots: true,
       }
     },
   ]
